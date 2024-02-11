@@ -10,19 +10,14 @@ Install [Langchain](https://github.com/hwchase17/langchain) and other required p
 ```
 pip install langchain openai chromadb tiktoken unstructured
 ```
-Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and rename it to `constants.py`.
+Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and to use you own [Portkey API key](https://app.portkey.ai/) rename it to `constants.py`.
 
-Place your own data into `data/data.txt`.
+
+Place your own python project into `data/`.
 
 ## Example usage
-Test reading `data/data.txt` file.
+Test reading python files.
 ```
-> python chatgpt.py "what is my dog's name"
-Your dog's name is Sunny.
-```
-
-Test reading `data/cat.pdf` file.
-```
-> python chatgpt.py "what is my cat's name"
-Your cat's name is Muffy.
+> python chatgpt.py "Is the class Galaxy immutable?"
+No, the Galaxy class is not immutable.
 ```
