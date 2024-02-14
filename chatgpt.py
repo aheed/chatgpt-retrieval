@@ -76,7 +76,7 @@ portkeyHeaders = createHeaders(
 )
 
 chain = ConversationalRetrievalChain.from_llm(
-  llm=ChatOpenAI(model="gpt-3.5-turbo", base_url=PORTKEY_GATEWAY_URL, default_headers=portkeyHeaders),
+  llm=ChatOpenAI(model="gpt-4-turbo-preview", base_url=PORTKEY_GATEWAY_URL, default_headers=portkeyHeaders),
   retriever=vector_search.as_retriever(search_kwargs={"k": 1}),
 )
 
