@@ -3,8 +3,7 @@ import sys
 
 from langchain.chains import ConversationalRetrievalChain
 from langchain_openai.chat_models import ChatOpenAI
-from langchain_community.document_loaders import DirectoryLoader, TextLoader
-from langchain.indexes import VectorstoreIndexCreator
+from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from portkey_ai import createHeaders, PORTKEY_GATEWAY_URL
 from pymongo import MongoClient

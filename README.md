@@ -22,6 +22,17 @@ python chatgpt.py "Is the class Galaxy immutable?"
 No, the Galaxy class is not immutable.
 ```
 
+-d arg to rebuild vector DB 
+```shell
+python chatgpt.py "Is the class Galaxy immutable?" -d
+Collection found
+rebuilding vector DB
+loaded 43 documents
+split into 112 chunks
+documents in DB: 112
+No, the Galaxy class is not immutable.
+```
+
 ### Warning printouts
 At the moment you get warnings like
 ```

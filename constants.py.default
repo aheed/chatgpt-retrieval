@@ -4,4 +4,4 @@
 
 OPENAI_KEY = "<your OpenAI API key>"
 PORTKEY_KEY="<your Portkey API key>"
-MONGODB_CLUSTER_URI="<...>"
+MONGODB_CLUSTER_URI="<your MongoDB cluster connection string>"
