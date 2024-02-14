@@ -8,7 +8,7 @@ Here's the [YouTube Video](https://youtu.be/9AXP7tCI9PI).
 
 Install [Langchain](https://github.com/hwchase17/langchain) and other required packages.
 ```shell
-pip install langchain langchain-community langchain-openai openai chromadb tiktoken unstructured
+pip install langchain langchain-community langchain-openai openai chromadb tiktoken unstructured pymongo[srv]
 ```
 Modify `constants.py.default` to use your own [OpenAI API key](https://platform.openai.com/account/api-keys), and to use you own [Portkey API key](https://app.portkey.ai/) rename it to `constants.py`.
 
@@ -35,3 +35,6 @@ Suppress stderr:
 ```shell
 python chatgpt.py "Is the class Galaxy immutable?" 2> /dev/null
 ```
+
+### Notes
+Make sure MongoDB Atlas cluster is accessible from your local IP
